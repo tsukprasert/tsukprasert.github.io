@@ -3,7 +3,7 @@ window.onload = function () {
   var darkTheme = document.getElementById('dark-mode-theme')
 
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    setTheme(localStorage.getItem('dark-mode-storage') || 'dark')
+    setTheme(localStorage.getItem('dark-mode-storage') || 'light')
   } else {
     setTheme(localStorage.getItem('dark-mode-storage') || 'light')
   }
@@ -19,13 +19,13 @@ window.onload = function () {
   function setTheme(mode) {
     localStorage.setItem('dark-mode-storage', mode)
     if (mode === 'dark') {
-      darkTheme.disabled = false
+      darkTheme.disabled = true
       toggle.className = 'fas fa-sun'
       document.querySelector('body').setAttribute('data-dark-theme', 'true')
     } else if (mode === 'light') {
       darkTheme.disabled = true
       toggle.className = 'fas fa-moon'
-      document.querySelector('body').setAttribute('data-dark-theme', 'false')
+      document.querySelector('body').setAttribute('data-dark-theme', 'true')
     }
   }
 }
