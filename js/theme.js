@@ -25,7 +25,7 @@ window.onload = function () {
     } else if (mode === 'light') {
       darkTheme.disabled = true
       toggle.className = 'fas fa-moon'
-      document.querySelector('body').setAttribute('data-dark-theme', 'true')
+      document.querySelector('body').setAttribute('data-dark-theme', 'false')
     }
   }
 }
