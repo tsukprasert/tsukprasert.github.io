@@ -42,6 +42,14 @@
 
 
 
+<link
+  id="dark-mode-theme"
+  crossorigin="anonymous"
+  href="/css/dark.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
 
 
 <script>
@@ -49,7 +57,7 @@
   var storedTheme = localStorage.getItem('dark-mode-storage')
 
   if (storedTheme === 'dark') {
-    darkTheme.disabled = false
+    darkTheme.disabled = true
   } else if (storedTheme === 'light') {
     darkTheme.disabled = true
   }
