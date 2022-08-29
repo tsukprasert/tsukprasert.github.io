@@ -10,7 +10,7 @@ window.onload = function () {
 
   toggle.addEventListener('click', () => {
     if (toggle.className === 'fas fa-moon') {
-      setTheme('dark')
+      setTheme('light')
     } else if (toggle.className === 'fas fa-sun') {
       setTheme('light')
     }
