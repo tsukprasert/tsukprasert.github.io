@@ -15,13 +15,13 @@ url                      : https://tsukprasert.github.io # the base hostname & p
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tsukprasert/tsukprasert.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : true# true, true(default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : true#change to true to add link to talkmap on talks page
+talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
-  provider               : # true(default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # true(default), "google", "google-universal", "custom"
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -192,32 +192,32 @@ collections:
 # Defaults
 defaults:
   # _posts
-  # - scope:
-  #     path: ""
-  #     type: posts
-  #   values:
-  #     layout: single
-  #     author_profile: true#true
-  #     read_time: true
-  #     comments: true
-  #     share: true
-  #     related: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false #true
+      read_time: true
+      comments: true
+      share: false 
+      related: true
   # _pages
-  # - scope:
-  #     path: ""
-  #     type: pages
-  #   values:
-  #     layout: single
-  #     author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false 
   # _teaching
-  # - scope:
-  #     path: ""
-  #     type: teaching
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true
-  #     comments: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: false 
+      share: false 
+      comments: false 
   # _publications
   - scope:
       path: ""
@@ -228,22 +228,22 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  # - scope:
-  #     path: ""
-  #     type: portfolio
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     share: true 
-  #     comment: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false 
+      share: true 
+      comment: false 
   # _talks
-  # - scope:
-  #     path: ""
-  #     type: talks
-  #   values:
-  #     layout: talk
-  #     author_profile: true
-  #     share: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: false 
+      share: false 
 
 # Sass/SCSS
 sass:
