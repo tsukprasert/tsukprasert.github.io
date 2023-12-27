@@ -26,7 +26,7 @@ import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    "proceeding": {
+    "inproceedings": {
         "file" : "proceedings.bib",
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
@@ -42,6 +42,22 @@ publist = {
                         "permalink":"/publication/"}
     } 
 }
+
+'''
+@inproceedings{sukprasert2023spatiotemporal,
+  title={Spatiotemporal Carbon-aware Scheduling in the Cloud: Limits and Benefits},
+  author={Sukprasert, Thanathorn and Souza, Abel and Bashir, Noman and Irwin, David and Shenoy, Prashant},
+  booktitle={Companion Proceedings of the 14th ACM International Conference on Future Energy Systems},
+  year={2023}
+}
+
+@article{sukprasert2023quantifying,
+  title={Quantifying the Benefits of Carbon-Aware Temporal and Spatial Workload Shifting in the Cloud},
+  author={Sukprasert, Thanathorn and Souza, Abel and Bashir, Noman and Irwin, David and Shenoy, Prashant},
+  journal={arXiv preprint arXiv:2306.06502},
+  year={2023}
+}
+'''
 
 html_escape_table = {
     "&": "&amp;",
