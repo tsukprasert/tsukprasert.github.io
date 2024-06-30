@@ -1,7 +1,9 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Academic Works"
     url: /publications/
+  - title: "CV"
+    url: /files/cv/Thanathorn_Sukprasert_CV.pdf
 
   # - title: "Talks"
   #   url: /talks/    
@@ -15,8 +17,6 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  - title: "CV"
-    url: /files/cv/Thanathorn_Sukprasert_CV.pdf
     
   # - title: "Guide"
   #   url: /markdown/
