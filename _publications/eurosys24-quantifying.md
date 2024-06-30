@@ -1,7 +1,7 @@
 ---
 title: "Quantifying the Benefits of Carbon-Aware Temporal and Spatial Workload Shifting in the Cloud"
 collection: publications
-permalink: /publication/arxiv2023spatiotemporal
+permalink: /publication/eurosys24-quantifying.md
 date: 2024-04-22
 # venue: 'Political Science Research and Methods'
 paperurl: '/files/eurosys24-quantifying.pdf'
