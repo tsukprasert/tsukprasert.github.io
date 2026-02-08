@@ -371,7 +371,24 @@
         "description": "Angela showed me this trail and it's a nice hilly trail to run on. Also, leaves of three, stays away from me."
     }
     ]
-  } 
+  }, 
+  {
+    "id": 22,
+    "city": "Raleigh",
+    "country": "USA",
+    "state": "North Carolina",
+    "coordinates": {
+      "lat": 35.7796,
+      "lng": -78.6382
+    },
+    "Notes": [
+      {
+        "title": "Workout with brother",
+        "description": "Ran with my brother when visited him in Raleigh."
+    }
+    ]
+  }, 
+  
 
   
 ]
