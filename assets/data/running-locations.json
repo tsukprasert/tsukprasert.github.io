@@ -264,7 +264,8 @@
       {
         "title": "My second half marathon",
         "date": "2024-06-01",
-        "description": "Ran this race two weeks after wisdom teeth removal. I did not have a good time, but managed to finish."
+        "description": "Ran this race two weeks after wisdom teeth removal. I did not have a good time, but managed to finish.",
+        "distance": 13.1
       }
     ]
   }, 
