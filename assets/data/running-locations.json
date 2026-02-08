@@ -322,7 +322,8 @@
       {
         "title": "New Year Resolution 10K",
         "date": "2024-12-31",
-        "description": "My mom wants to see me run a 10K before the end of the year, so I signed up for her to use the cowbells."
+        "description": "My mom wants to see me run a 10K before the end of the year, so I signed up for her to use the cowbells.", 
+        "distance": 6.2
       }
     ]
   }, 
