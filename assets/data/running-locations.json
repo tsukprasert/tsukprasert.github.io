@@ -145,9 +145,6 @@
         },
         "Notes": [
           {
-            "description": "I would go for a run there sometimes."
-          }, 
-          {
             "date": "2023-11-05",
             "title": "Wester Mass 10",
             "description": "My first long distance race. Did not train much for this race, but this is where I started to get more routinely into running. The course was from Amherst to Northampton.",
@@ -342,6 +339,40 @@
         "description": "The slogan of this race is 'just one hiil' but that one hill is BRUTAL."
     }
     ]
-  }
+  }, 
+  {
+    "id": 20,
+    "city": "San Jose",
+    "country": "USA",
+    "state": "California",
+    "coordinates": {
+      "lat": 37.3382,
+      "lng": -121.8863
+    },
+    "Notes": [
+      {
+        "title": "Calabasas means pumpkin",
+        "description": "The loop in park looks like a pumpkin."
+    }
+    ]
+  }, 
+  {
+    "id": 21,
+    "city": "Saratoga",
+    "country": "USA",
+    "state": "California",
+    "coordinates": {
+      "lat": 37.2636,
+      "lng": -122.0233
+    },
+    "Notes": [
+      {
+        "title": "Fremont Older Trail",
+        "description": "Angela showed me this trail and it's a nice hilly trail to run on. Also, leaves of three, stays away from me."
+    }
+    ]
+  } 
+
+  
 ]
 }

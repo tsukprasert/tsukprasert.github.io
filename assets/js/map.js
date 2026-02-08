@@ -214,10 +214,15 @@ function populateLocationDropdown(locations) {
   // Clear existing options (except the first placeholder)
   select.innerHTML = '<option value="">Select a city...</option>';
 
-  // Add option for each location
-  locations.forEach((location, index) => {
+  // Create array with original indices and sort alphabetically by city name
+  const sortedLocations = locations
+    .map((location, index) => ({ location, index }))
+    .sort((a, b) => a.location.city.localeCompare(b.location.city));
+
+  // Add option for each location in sorted order
+  sortedLocations.forEach(({ location, index }) => {
     const option = document.createElement('option');
-    option.value = index;
+    option.value = index; // Use original index for jumpToCity()
     const label = location.state
       ? `${location.city}, ${location.state}`
       : `${location.city}, ${location.country}`;
