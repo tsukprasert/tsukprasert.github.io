@@ -81,22 +81,10 @@
         <!-- Map Container -->
         <div id="running-map"></div>
 
-        <!-- Auth Prompt (shown if not authenticated) -->
-        <div class="auth-prompt" id="auth-prompt">
-          <h3>Connect Your Strava Account</h3>
-          <p>To view your running routes on this map, connect your Strava account.</p>
-          <button onclick="initiateStravaAuth()" class="btn btn-accent" style="margin-top: 1rem;">
-            Connect Strava
-          </button>
-          <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #999;">
-            Your data is only stored locally in your browser. No data is sent to any server.
-          </p>
-        </div>
-
         <!-- Loading Indicator -->
         <div id="loading" style="display: none; text-align: center; padding: 3rem;">
           <div class="spinner"></div>
-          <p style="margin-top: 1rem; color: #666;">Loading activities...</p>
+          <p style="margin-top: 1rem; color: #666;">Loading map...</p>
         </div>
 
         <!-- Error Message -->

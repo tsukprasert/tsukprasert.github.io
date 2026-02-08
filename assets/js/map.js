@@ -8,34 +8,22 @@ let markers = [];
 let locationData = null; // Store location data globally for dropdown
 
 /**
- * Initializes the page based on authentication status
+ * Initializes the page
  */
 async function initializePage() {
-  // First, check if we're returning from OAuth callback
-  const hasCode = new URLSearchParams(window.location.search).has('code');
-
-  if (hasCode) {
-    const authSuccess = await handleAuthCallback();
-    if (authSuccess) {
-      // Authentication successful, load both Strava and location data
-      await loadAndDisplayData();
-    }
-    return;
-  }
-
-  // Load data regardless of auth status
+  // Load location data and display map
   await loadAndDisplayData();
 }
 
 /**
- * Loads both Strava and location data, displays on map
+ * Loads location data and displays map
  */
 async function loadAndDisplayData() {
   showLoading(true);
   showError(null);
 
   try {
-    // Always load location data for the map
+    // Load location data for the map
     locationData = await getLocationData();
 
     // Initialize map with world view
@@ -47,26 +35,8 @@ async function loadAndDisplayData() {
     // Populate location dropdown
     populateLocationDropdown(locationData.locations);
 
-    // Try to load Strava data if authenticated
-    let stravaActivities = null;
-    if (isAuthenticated()) {
-      showAuthPrompt(false);
-      try {
-        stravaActivities = await getActivities();
-        console.log(`Loaded ${stravaActivities.length} Strava activities`);
-      } catch (error) {
-        console.error('Error loading Strava data:', error);
-        // Don't fail the whole page if Strava fails
-        if (error.message.includes('authenticate')) {
-          showAuthPrompt(true);
-        }
-      }
-    } else {
-      showAuthPrompt(true);
-    }
-
-    // Update stats panel with both data sources
-    updateStatsPanel(stravaActivities, locationData);
+    // Update stats panel with data from JSON
+    updateStatsPanel(locationData);
 
     // Show location selector
     showLocationSelector(true);
@@ -193,26 +163,22 @@ function createCityPopup(location) {
 }
 
 /**
- * Updates the stats panel with both Strava and location data
- * @param {Array|null} stravaActivities - Strava activities (null if not authenticated)
+ * Updates the stats panel with data from JSON
  * @param {Object} locationData - Location data object
  */
-function updateStatsPanel(stravaActivities, locationData) {
+function updateStatsPanel(locationData) {
   // Calculate location stats
   const locationStats = calculateLocationStats(locationData);
 
-  // Update location stats (always available)
+  // Update location stats
   document.getElementById('total-cities').textContent = locationStats.totalCities;
 
-  // Update Strava stats (if available)
-  if (stravaActivities && stravaActivities.length > 0) {
-    const stravaStats = calculateStats(stravaActivities);
-
-    document.getElementById('total-activities').textContent = stravaStats.totalActivities;
-    document.getElementById('total-distance').textContent =
-      metersToMiles(stravaStats.totalDistance).toFixed(1) + ' mi';
+  // Update Strava stats from JSON (if available)
+  if (locationData.stravaStats) {
+    document.getElementById('total-activities').textContent = locationData.stravaStats.totalRuns;
+    document.getElementById('total-distance').textContent = locationData.stravaStats.totalDistance.toFixed(1) + ' mi';
   } else {
-    // Show placeholders if not authenticated
+    // Show placeholders if not available
     document.getElementById('total-activities').textContent = '-';
     document.getElementById('total-distance').textContent = '-';
   }

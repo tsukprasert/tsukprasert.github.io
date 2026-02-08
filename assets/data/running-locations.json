@@ -1,5 +1,9 @@
 {
   "lastUpdated": "2025-02-07",
+  "stravaStats": {
+    "totalRuns": 376,
+    "totalDistance": 1818
+  },
   "locations": [
     {
       "id": 1,
