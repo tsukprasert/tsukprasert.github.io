@@ -1,0 +1,383 @@
+/*
+ * Responsive Styles for Mobile and Tablet
+ * Mobile-first approach with progressive enhancement
+ */
+
+/* ============================================
+   Tablet (max-width: 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-xl: 2.5rem;
+    --spacing-xxl: 3rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero-content {
+    grid-template-columns: 250px 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .hero-image img {
+    max-width: 250px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    gap: var(--spacing-md);
+  }
+
+  #running-map {
+    height: 500px;
+  }
+}
+
+/* ============================================
+   Mobile Landscape / Small Tablet (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 2.5rem;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.4rem; }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Header */
+  header {
+    padding: var(--spacing-sm) 0;
+  }
+
+  header .container {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .site-title {
+    font-size: 1.3rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  /* Hero */
+  .hero {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 200px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  /* Main content */
+  main {
+    padding: var(--spacing-xl) 0;
+  }
+
+  section {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  /* Publications */
+  .publication {
+    padding: var(--spacing-md);
+  }
+
+  .pub-title {
+    font-size: 1.1rem;
+  }
+
+  .pub-links {
+    gap: var(--spacing-xs);
+  }
+
+  .pub-links a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  /* PDF Viewer */
+  .pdf-controls {
+    flex-direction: column;
+  }
+
+  .pdf-controls .btn {
+    width: 100%;
+  }
+
+  .pdf-viewer {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  /* Map */
+  #running-map {
+    height: 400px;
+  }
+
+  .map-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .stat-item {
+    padding: var(--spacing-sm);
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================================
+   Mobile Portrait (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  :root {
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1.2rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.1rem; }
+
+  /* Hero */
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero-image img {
+    max-width: 150px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-text .affiliation {
+    font-size: 0.9rem;
+  }
+
+  .contact-links a {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.9rem;
+  }
+
+  /* Navigation */
+  nav ul {
+    gap: 0;
+  }
+
+  nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  /* Publications */
+  .publication {
+    padding: var(--spacing-sm);
+  }
+
+  .pub-title {
+    font-size: 1rem;
+  }
+
+  .pub-authors,
+  .pub-venue {
+    font-size: 0.85rem;
+  }
+
+  /* PDF Viewer */
+  .pdf-viewer {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  /* Map */
+  #running-map {
+    height: 350px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
+  }
+
+  /* Auth prompt */
+  .auth-prompt {
+    padding: var(--spacing-lg);
+  }
+
+  .auth-prompt h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: var(--spacing-lg) 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  header,
+  nav,
+  footer,
+  .btn,
+  .map-controls,
+  #running-map {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .publication {
+    page-break-inside: avoid;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* ============================================
+   Accessibility Improvements
+   ============================================ */
+
+/* Focus visible for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-text: #000;
+    --color-bg: #FFF;
+    --color-border: #000;
+  }
+
+  .btn,
+  nav a,
+  .pub-links a {
+    border: 2px solid currentColor;
+  }
+}

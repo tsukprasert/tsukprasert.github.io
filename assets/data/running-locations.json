@@ -1,0 +1,343 @@
+{
+  "lastUpdated": "2025-02-07",
+  "locations": [
+    {
+      "id": 1,
+      "city": "Amherst",
+      "country": "USA",
+      "state": "Massachusetts",
+      "coordinates": {
+        "lat": 42.3732,
+        "lng": -72.5199
+      },
+      "Notes": [
+        {
+          "title": "Home Turf",
+          "description": "Campus has a nice ~2.5 mile loop around the perimeter. The Norwottuck Rail Trail is superb to be with the nature. The hills around the area are also fun to run for training."
+        }, 
+        {
+          "date": "2025-04-27",
+          "title": "Daffodil Run 10K",
+          "description": "Ran with Angela around Amherst neighborhood.", 
+          "distance": 6.2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "city": "Boston",
+      "country": "USA",
+      "state": "Massachusetts",
+      "coordinates": {
+        "lat": 42.3601,
+        "lng": -71.0589
+      },
+      "Notes": [
+        {
+          "title": "Boston Marathon Spectating",
+          "description": "On Patriots day I would go to the baseball game then spectate the Boston Marathon. The energy and excitement of the crowd is amazing, and it's inspiring to see runners from all over the world pushing themselves to the limit."
+        }, 
+        {
+          "date": "2025-04-18",
+          "title": "Boston 5K",
+          "description": "The crowd was amazing. There's always something special about the marathon finish line.",
+          "distance": 3.1
+        }, 
+        {
+          "date": "2025-06-10",
+          "title": "Boston 10K",
+          "description": "Had a pretty bad injury leading up to this race. Did not really train much leading up to the race. My PT gave me a green light to run but I was still pretty nervous. It was super humid that day, but somehow I ended up running a pretty solid time considering the circumstances, and it felt great to be back out there racing again.",
+          "distance": 6.2
+        }, 
+        {
+          "date": "2025-11-09",
+          "title": "Boston Half Marathon",
+          "description": "Felt strong leading up to the race, and did well! The course was super pretty and the weather was perfect. My labmates came out to cheer me on which was really nice. I ended up running a personal best time for the half marathon, and it was a great confidence boost for my training.",
+          "distance": 13.1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "city": "Bangkok",
+      "country": "Thailand",
+      "coordinates": {
+        "lat": 13.7563,
+        "lng": 100.5018
+      },
+      "Notes": [
+        {
+          "title": "Visiting a Friend",
+          "description": "Did couple runs when I was here. Mostly indoors because of the air quality and traffic."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "city": "Chiang Rai",
+      "country": "Thailand",
+      "coordinates": {
+        "lat": 19.9101,
+        "lng": 99.8400
+      },
+      "Notes": [
+        {
+          "title": "Home",
+          "description": "I didn't know much about running when I was here. I would go for a run here and there but I didn't really have a consistent routine. The weather was humid but the heat is barable.",
+          "distance": 10.0
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "city": "New York City",
+      "country": "USA",
+      "state": "New York",
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.0060
+      },
+      "Notes": [
+        {
+          "title": "Central Park",
+          "description": "The classic NYC running experience"
+
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "city": "San Francisco",
+      "country": "USA",
+      "state": "California",
+      "coordinates": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "Notes": [
+        {
+          "date": "2024-09-01",
+          "title": "Golden Gate Park",
+          "description": "Had a good time running there. This park is very nice for running!",
+          "distance": 6.25
+        }, 
+        {
+          "date": "2024-08-22",
+          "title": "JP Morgan Corporate Challenge",
+          "description": "Race with my internship team!",
+          "distance": 3.1
+        }
+      ]
+    }, 
+    {
+        "id": 7,
+        "city": "Northampton",
+        "country": "USA",
+        "state": "Massachusetts",
+        "coordinates": {
+          "lat": 42.3251,
+          "lng": -72.6412
+        },
+        "Notes": [
+          {
+            "description": "I would go for a run there sometimes."
+          }, 
+          {
+            "date": "2023-11-05",
+            "title": "Wester Mass 10",
+            "description": "My first long distance race. Did not train much for this race, but this is where I started to get more routinely into running. The course was from Amherst to Northampton.",
+            "distance": 10.0
+          }
+        ]
+    },
+    {
+        "id": 8,
+        "city": "Pelham",
+        "country": "USA",
+        "state": "Massachusetts",
+        "coordinates": {
+          "lat": 40.9141,
+          "lng": -73.8083
+        },
+        "Notes": [
+          {
+            "description": "Ran here during the summer of 2025. Super nice neighborhood to run in. Super hilly as well."
+          }
+        ]
+    }, 
+    {
+        "id": 9,
+        "city": "Hartford",
+        "country": "USA",
+        "state": "Massachusetts",
+        "coordinates": {
+          "lat": 41.7658,
+          "lng": -72.6734
+        },
+        "Notes": [
+          {
+            "title": "Hartford Marathon",
+            "description": "My first marathon! So glad my friends came out to support me. The course was pretty hilly and the weather was not great, but I ended up finishing and it was a great experience overall. Shout out to Stephanie for flying out to support me."
+          }
+        ]
+    }, 
+    {
+        "id": 10,
+        "city": "Santa Clara",
+        "country": "USA",
+        "state": "California",
+        "coordinates": {
+          "lat": 37.3541,
+          "lng": -121.9552
+        },
+        "Notes": [
+          {
+            "title": "My after work training spot",
+            "description": "San tomas aquino trail everyday after work. See the same people running there every day. It was nice while it lasted"
+
+    }]
+  }, 
+  {
+    "id": 11,
+    "city": "Acton",
+    "country": "USA",
+    "state": "Massachusetts",
+    "coordinates": {
+      "lat": 42.4708,
+      "lng": -71.4328
+    },
+    "Notes": [
+      {
+        "title": "The bean loop",
+        "description": "Ran around Stephanie's neighborhood. When I spent my Christmas break there. The loop looks like a literal bean."
+      }
+    ]
+  }, 
+  {
+    "id": 12,
+    "city": "Washington D.C.",
+    "country": "USA",
+    "state": "District of Columbia",
+    "coordinates": {
+      "lat": 38.9072,
+      "lng": -77.0369
+    },
+    "Notes": [
+      {
+        "title": "My first half marathon",
+        "date": "2024-03-24",
+        "description": "I was going to miss my long run that week anyway, but I saw that there was a half marathon happening in DC and I thought it would be fun to do it."
+      }
+    ]
+  }, 
+  {
+    "id": 13,
+    "city": "Athens",
+    "country": "Greece",
+    "state": "Attica",
+    "coordinates": {
+      "lat": 37.9838,
+      "lng": 23.7275
+    },
+    "Notes": [
+      {
+        "title": "Eurosys'24 brought me to Athens!",
+        "date": "2024-04-28",
+        "description": "Appreciation run around the city after the conference. I got to run in the Panathenaic Stadium where the first modern Olympics was held. It was a pretty cool experience to run there and see the history of the place. Also got to see the torch lightning ceremony for the Olympics which was pretty cool as well."
+      }
+    ]
+  }, 
+  {
+    "id": 14,
+    "city": "Simsbury",
+    "country": "USA",
+    "state": "Connecticut",
+    "coordinates": {
+      "lat": 41.9115,
+      "lng": -72.7896
+    },
+    "Notes": [
+      {
+        "title": "My second half marathon",
+        "date": "2024-06-01",
+        "description": "Ran this race two weeks after wisdom teeth removal. I did not have a good time, but managed to finish."
+      }
+    ]
+  }, 
+  {
+    "id": 15,
+    "city": "Singapore",
+    "country": "Singapore",
+    "state": "",
+    "coordinates": {
+      "lat": 1.3521,
+      "lng": 103.8198
+    },
+    "Notes": [
+        {
+        "title": "e-Energy'24 brought me to Singapore!",
+        "description": "How I miss this place. I got to run around the Marina Bay area and see the iconic skyline of Singapore."
+      },
+      {
+        "title": "Singapore 10K",
+        "date": "2024-09-15",
+        "description": "Super humid 10K. I was not really prepared for the humidity and it was a struggle. Had a super nice meal with my friends after the race!",
+        "distance": 6.2
+      }
+
+  ]
+},
+  {
+    "id": 16,
+    "city": "Chicago",
+    "country": "USA",
+    "state": "Illinois",
+    "coordinates": {
+      "lat": 41.8781,
+      "lng": -87.6298
+    },
+    "Notes": [
+      {
+        "title": "Chicago 5k",
+        "date": "2025-10-11",
+        "description": "Ran with my Aunties!"
+      }
+    ]
+  }, 
+  {
+    "id": 17,
+    "city": "Milwaukee",
+    "country": "USA",
+    "state": "Wisconsin",
+    "coordinates": {
+      "lat": 43.0389,
+      "lng": -87.9065
+    },
+    "Notes": [
+      {
+        "title": "New Year Resolution 10K",
+        "date": "2024-12-31",
+        "description": "My mom wants to see me run a 10K before the end of the year, so I signed up for her to use the cowbells."
+      }
+    ]
+  }, 
+  {
+    "id": 18,
+    "city": "Hadley",
+    "country": "USA",
+    "state": "Massachusetts",
+    "coordinates": {
+      "lat": 42.3418,
+      "lng":  -72.5884
+    },
+    "Notes": [
+      {
+        "title": "Summit Run 5k",
+        "date": "2024-10-20",
+        "description": "The slogan of this race is 'just one hiil' but that one hill is BRUTAL."
+    }
+    ]
+  }
+]
+}

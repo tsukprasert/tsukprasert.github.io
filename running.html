@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Map of cities I've explored through running around the world">
+  <meta name="keywords" content="running, cities, travel, fitness, world map">
+  <meta name="author" content="Thanathorn Sukprasert">
+
+  <title>Fun Stuff! | Thanathorn Sukprasert</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <h1 class="site-title">
+        <a href="index.html">Thanathorn Sukprasert</a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="running.html" class="active">Fun Stuff!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <section id="running">
+        <h2 class="section-title">Running Map</h2>
+        <p style="margin-bottom: 2rem; color: #666;">
+          Beyond research, I enjoy exploring new places through running. This map shows cities around the world where I've gone for runs.
+        </p>
+
+        <!-- Stats Panel -->
+        <div class="stats-panel" id="stats-panel" style="display: none;">
+          <h3>Running Around the World</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-value" id="total-activities">-</span>
+              <span class="stat-label">Total Runs</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="total-distance">-</span>
+              <span class="stat-label">Total Distance</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value" id="total-cities">-</span>
+              <span class="stat-label">Cities Visited</span>
+            </div>
+          </div>
+          <p style="text-align: center; color: #999; margin-top: 1rem; font-size: 0.9rem;">
+            Last updated: <span id="last-updated">-</span>
+          </p>
+        </div>
+
+        <!-- Location Selector -->
+        <div class="location-selector" id="location-selector" style="display: none; margin-bottom: 1.5rem;">
+          <label for="city-select" style="display: block; margin-bottom: 0.5rem; color: #666; font-weight: 500;">
+            Jump to a city:
+          </label>
+          <select id="city-select" onchange="jumpToCity(this.value)"
+                  style="padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; width: 100%; max-width: 300px; cursor: pointer;">
+            <option value="">Select a city...</option>
+          </select>
+        </div>
+
+        <!-- Map Container -->
+        <div id="running-map"></div>
+
+        <!-- Auth Prompt (shown if not authenticated) -->
+        <div class="auth-prompt" id="auth-prompt">
+          <h3>Connect Your Strava Account</h3>
+          <p>To view your running routes on this map, connect your Strava account.</p>
+          <button onclick="initiateStravaAuth()" class="btn btn-accent" style="margin-top: 1rem;">
+            Connect Strava
+          </button>
+          <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #999;">
+            Your data is only stored locally in your browser. No data is sent to any server.
+          </p>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" style="display: none; text-align: center; padding: 3rem;">
+          <div class="spinner"></div>
+          <p style="margin-top: 1rem; color: #666;">Loading activities...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" style="display: none; background: #fee; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #c00; margin-top: 1rem;">
+          <strong>Error:</strong> <span id="error-text"></span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Thanathorn Sukprasert. All rights reserved.</p>
+      <p>Built with HTML, CSS, and JavaScript | Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Libraries -->
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+  <!-- Custom JavaScript -->
+  <script src="assets/js/strava-auth.js"></script>
+  <script src="assets/js/strava-data.js"></script>
+  <script src="assets/js/locations-data.js"></script>
+  <script src="assets/js/map.js"></script>
+
+  <!-- Initialize on page load -->
+  <script>
+    // Check authentication status when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initializePage();
+    });
+  </script>
+</body>
+</html>
