@@ -341,7 +341,7 @@
     ]
   }, 
   {
-    "id": 20,
+    "id": 19,
     "city": "San Jose",
     "country": "USA",
     "state": "California",
@@ -357,7 +357,7 @@
     ]
   }, 
   {
-    "id": 21,
+    "id": 20,
     "city": "Saratoga",
     "country": "USA",
     "state": "California",
@@ -373,7 +373,7 @@
     ]
   }, 
   {
-    "id": 22,
+    "id": 21,
     "city": "Raleigh",
     "country": "USA",
     "state": "North Carolina",
@@ -387,7 +387,7 @@
         "description": "Ran with my brother when visited him in Raleigh."
     }
     ]
-  }, 
+  }
   
 
   
