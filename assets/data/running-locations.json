@@ -229,7 +229,8 @@
       {
         "title": "My first half marathon",
         "date": "2024-03-24",
-        "description": "I was going to miss my long run that week anyway, but I saw that there was a half marathon happening in DC and I thought it would be fun to do it."
+        "description": "I was going to miss my long run that week anyway, but I saw that there was a half marathon happening in DC and I thought it would be fun to do it.",
+        "distance": 13.1
       }
     ]
   }, 
