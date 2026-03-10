@@ -405,11 +405,13 @@
     "Notes": [
       {
         "title": "Los Angeles Marathon",
+        "distance": 26.2,
         "date": "2025-03-08",
         "description": "Sunny California at its literal meaning. It has been a windy week leading up to the race, but ended up being the hottest day of the week on the race day. Had a great time despite the heat and the elevation. Amazing crowd. Shout out to Stephanie for being there for me, not just at the race but the entire week. This one is for you :)"
       }, 
       {
         "title": "Los Angeles 5K",
+        "distance": 3.1,
         "date": "2025-03-07",
         "description": "5K with Stephanie! We have been wanting to run together for a while and we finally made it happen. The course was around the Dodger Stadium. Cold at the start but warmed up pretty quickly. It was a little dusty, but we had a great time :)"
       }, 
