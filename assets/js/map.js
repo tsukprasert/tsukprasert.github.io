@@ -42,7 +42,7 @@ async function loadAndDisplayData() {
     showLocationSelector(true);
 
     // Update last updated timestamp
-    updateLastUpdatedTime(locationData.lastUpdated);
+    // updateLastUpdatedTime(locationData.lastUpdated);
 
   } catch (error) {
     console.error('Error loading data:', error);
@@ -191,17 +191,17 @@ function updateStatsPanel(locationData) {
  * Updates the last updated timestamp
  * @param {string} dateString - Last updated date from location data
  */
-function updateLastUpdatedTime(dateString) {
-  if (dateString) {
-    const date = new Date(dateString);
-    const timeString = date.toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    });
-    document.getElementById('last-updated').textContent = timeString;
-  }
-}
+// function updateLastUpdatedTime(dateString) {
+//   if (dateString) {
+//     const date = new Date(dateString);
+//     const timeString = date.toLocaleDateString('en-US', {
+//       month: 'long',
+//       day: 'numeric',
+//       year: 'numeric'
+//     });
+//     // document.getElementById('last-updated').textContent = timeString;
+//   }
+// }
 
 /**
  * Populates the location dropdown with cities
