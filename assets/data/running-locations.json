@@ -392,9 +392,33 @@
         "description": "Ran with my brother when visited him in Raleigh."
     }
     ]
+  }, 
+  {
+    "id": 22,
+    "city": "Los Angeles",
+    "country": "USA",
+    "state": "California",
+    "coordinates": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    },
+    "Notes": [
+      {
+        "title": "Los Angeles Marathon",
+        "date": "2025-03-08",
+        "description": "Sunny California at its literal meaning. It has been a windy week leading up to the race, but ended up being the hottest day of the week on the race day. Had a great time despite the heat and the elevation. Amazing crowd. Shout out to Stephanie for being there for me, not just at the race but the entire week. This one is for you :)"
+      }, 
+      {
+        "title": "Los Angeles 5K",
+        "date": "2025-03-07",
+        "description": "5K with Stephanie! We have been wanting to run together for a while and we finally made it happen. The course was around the Dodger Stadium. Cold at the start but warmed up pretty quickly. It was a little dusty, but we had a great time :)"
+      }, 
+      {
+        "title": "Redondo Beach",
+        "date": "2025-03-06",
+        "description": "Sunrise shakeout run along the beach. The view was gorgeous."
+      }
+    ]
   }
-  
-
-  
 ]
 }
