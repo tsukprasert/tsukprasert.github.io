@@ -414,13 +414,31 @@
         "distance": 3.1,
         "date": "2025-03-07",
         "description": "5K with Stephanie! We have been wanting to run together for a while and we finally made it happen. The course was around the Dodger Stadium. Cold at the start but warmed up pretty quickly. It was a little dusty, but we had a great time :)"
-      }, 
+      }
+    ]
+  }, 
+  {
+    "id": 23,
+    "city": "Torrence",
+    "country": "USA",
+    "state": "California",
+    "coordinates": {
+      "lat": 33.8358,
+      "lng": -118.3406
+    },
+    "Notes": [
       {
+        "title": "Torrence",
+        "date": "2025-03-05",
+        "description": "Running around the neighborhood"
+      }, 
+    {
         "title": "Redondo Beach",
         "date": "2025-03-06",
         "description": "Sunrise shakeout run along the beach. The view was gorgeous."
       }
     ]
   }
+
 ]
 }
