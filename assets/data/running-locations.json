@@ -419,7 +419,7 @@
   }, 
   {
     "id": 23,
-    "city": "Torrence",
+    "city": "Torrance",
     "country": "USA",
     "state": "California",
     "coordinates": {
@@ -428,7 +428,7 @@
     },
     "Notes": [
       {
-        "title": "Torrence",
+        "title": "Torrance",
         "date": "2025-03-05",
         "description": "Running around the neighborhood"
       }, 
