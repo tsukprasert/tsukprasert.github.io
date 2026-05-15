@@ -123,6 +123,12 @@
             cursor: pointer;
           }
           .sg-dots button.is-active { background: #014e85; }
+
+          .pdf-mobile-link { display: none; }
+          @media (max-width: 768px) {
+            .pdf-viewer { display: none; }
+            .pdf-mobile-link { display: flex; }
+          }
         </style>
         <p style="color: #666; font-style: italic;">
           You found the easter egg :-).</br>Here are some fragments of memories from another part of
@@ -157,6 +163,9 @@
             <a href="assets/high-school-speech/RallySpeech.pdf">Open Rally Speech</a>
           </p>
         </iframe>
+        <div class="pub-links pdf-mobile-link">
+          <a href="assets/high-school-speech/RallySpeech.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
       </section>
 
       <section style="margin-top: 2.5rem;">
@@ -171,6 +180,9 @@
             <a href="assets/high-school-speech/IncomingSpeech.pdf">Open Incoming Speech</a>
           </p>
         </iframe>
+        <div class="pub-links pdf-mobile-link">
+          <a href="assets/high-school-speech/IncomingSpeech.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
       </section>
 
       <section style="margin-top: 2.5rem;">
@@ -185,6 +197,9 @@
             <a href="assets/high-school-speech/FinalSpeech.pdf">Open Final Speech</a>
           </p>
         </iframe>
+        <div class="pub-links pdf-mobile-link">
+          <a href="assets/high-school-speech/FinalSpeech.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
       </section>
 
       <section style="margin-top: 2.5rem; margin-bottom: 3rem;">
@@ -199,6 +214,9 @@
             <a href="assets/high-school-speech/GraduationSpeech.pdf">Open Graduation Speech</a>
           </p>
         </iframe>
+        <div class="pub-links pdf-mobile-link">
+          <a href="assets/high-school-speech/GraduationSpeech.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
       </section>
     </div>
   </main>
