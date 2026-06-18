@@ -1,8 +1,8 @@
 {
   "lastUpdated": "2025-02-07",
   "stravaStats": {
-    "totalRuns": 392,
-    "totalDistance": 1938
+    "totalRuns": 409,
+    "totalDistance": 2006.8
   },
   "locations": [
     {
@@ -58,6 +58,11 @@
           "title": "Boston Half Marathon",
           "description": "Felt strong leading up to the race, and did well! The course was super pretty and the weather was perfect. My labmates came out to cheer me on which was really nice. I ended up running a personal best time for the half marathon, and it was a great confidence boost for my training.",
           "distance": 13.1
+        }, 
+        {
+          "date": "2026-04-18",
+          "title": "Boston 5k",
+          "description": "Had a great time running with my aunties!"
         }
       ]
     },
@@ -440,6 +445,23 @@
         "title": "Redondo Beach",
         "date": "2025-03-06",
         "description": "Sunrise shakeout run along the beach. The view was gorgeous."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "city": "Madison",
+    "country": "USA",
+    "state": "Wisconsin",
+    "coordinates": {
+      "lat": 43.0731,
+      "lng": -89.4012
+    },
+    "Notes": [
+      {
+        "title": "Lake Monona",
+        "date": "2026-06-17",
+        "description": "Ran a small loop around the lake and finished the run with Jamba Juice!"
       }
     ]
   }
